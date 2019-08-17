@@ -3,16 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9F5F0B871EF3621A97B169 /* Pods_rainierrivera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617A894FDD83173C1A2B941 /* Pods_rainierrivera.framework */; };
 		65318CAF2305992E00B82740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65318CAE2305992E00B82740 /* AppDelegate.swift */; };
-		65318CB12305992E00B82740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65318CB02305992E00B82740 /* ViewController.swift */; };
+		65318CB12305992E00B82740 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65318CB02305992E00B82740 /* CurrencyViewController.swift */; };
 		65318CB42305992E00B82740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65318CB22305992E00B82740 /* Main.storyboard */; };
 		65318CB62305993200B82740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65318CB52305993200B82740 /* Assets.xcassets */; };
 		65318CB92305993200B82740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65318CB72305993200B82740 /* LaunchScreen.storyboard */; };
 		65318CC42305993200B82740 /* rainierriveraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65318CC32305993200B82740 /* rainierriveraTests.swift */; };
+		654C72F723059AB900F0F487 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C72F623059AB900F0F487 /* BaseRequest.swift */; };
+		654C72F9230707EB00F0F487 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C72F8230707EB00F0F487 /* CurrencyViewModel.swift */; };
+		654C72FB2307083200F0F487 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C72FA2307083200F0F487 /* Conversion.swift */; };
+		654C72FD2307085B00F0F487 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C72FC2307085B00F0F487 /* CurrencyService.swift */; };
+		654C73002307087E00F0F487 /* CurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C72FF2307087E00F0F487 /* CurrencyRequest.swift */; };
+		654C7303230708A600F0F487 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C7302230708A600F0F487 /* NetworkService.swift */; };
+		654C7305230708E100F0F487 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654C7304230708E100F0F487 /* CurrencyResponse.swift */; };
+		C765AB1D9B47718846DD2C64 /* Pods_rainierriveraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998546EE8934C3D6926E82AE /* Pods_rainierriveraTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5617A894FDD83173C1A2B941 /* Pods_rainierrivera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rainierrivera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65318CAB2305992E00B82740 /* rainierrivera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainierrivera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65318CAE2305992E00B82740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65318CB02305992E00B82740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65318CB02305992E00B82740 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		65318CB32305992E00B82740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65318CB52305993200B82740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65318CB82305993200B82740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +46,18 @@
 		65318CBF2305993200B82740 /* rainierriveraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rainierriveraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65318CC32305993200B82740 /* rainierriveraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rainierriveraTests.swift; sourceTree = "<group>"; };
 		65318CC52305993200B82740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654C72F623059AB900F0F487 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		654C72F8230707EB00F0F487 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		654C72FA2307083200F0F487 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
+		654C72FC2307085B00F0F487 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		654C72FF2307087E00F0F487 /* CurrencyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRequest.swift; sourceTree = "<group>"; };
+		654C7302230708A600F0F487 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		654C7304230708E100F0F487 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
+		8AFBB4942682EC5C95BF7779 /* Pods-rainierrivera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainierrivera.debug.xcconfig"; path = "Target Support Files/Pods-rainierrivera/Pods-rainierrivera.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1E3DC5CA9359861AB7B4B4 /* Pods-rainierrivera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainierrivera.release.xcconfig"; path = "Target Support Files/Pods-rainierrivera/Pods-rainierrivera.release.xcconfig"; sourceTree = "<group>"; };
+		998546EE8934C3D6926E82AE /* Pods_rainierriveraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rainierriveraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BABF4BD83B4BD9B522EEDB5 /* Pods-rainierriveraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainierriveraTests.release.xcconfig"; path = "Target Support Files/Pods-rainierriveraTests/Pods-rainierriveraTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE092D5B0F7639402C2C9C6F /* Pods-rainierriveraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainierriveraTests.debug.xcconfig"; path = "Target Support Files/Pods-rainierriveraTests/Pods-rainierriveraTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9F5F0B871EF3621A97B169 /* Pods_rainierrivera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C765AB1D9B47718846DD2C64 /* Pods_rainierriveraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +86,8 @@
 				65318CAD2305992E00B82740 /* rainierrivera */,
 				65318CC22305993200B82740 /* rainierriveraTests */,
 				65318CAC2305992E00B82740 /* Products */,
+				EC1D16CDBD1C2EF0B19D89D8 /* Pods */,
+				BF0E56E1B04D6F2322713603 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +103,11 @@
 		65318CAD2305992E00B82740 /* rainierrivera */ = {
 			isa = PBXGroup;
 			children = (
+				655A85E72307BEB300C72B33 /* Network */,
+				655A85E62307BEAC00C72B33 /* Model */,
+				655A85E52307BEA300C72B33 /* Controller */,
+				655A85E42307BE9300C72B33 /* Viewmodel */,
 				65318CAE2305992E00B82740 /* AppDelegate.swift */,
-				65318CB02305992E00B82740 /* ViewController.swift */,
 				65318CB22305992E00B82740 /* Main.storyboard */,
 				65318CB52305993200B82740 /* Assets.xcassets */,
 				65318CB72305993200B82740 /* LaunchScreen.storyboard */,
@@ -96,6 +125,70 @@
 			path = rainierriveraTests;
 			sourceTree = "<group>";
 		};
+		655A85E42307BE9300C72B33 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				654C72F8230707EB00F0F487 /* CurrencyViewModel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		655A85E52307BEA300C72B33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65318CB02305992E00B82740 /* CurrencyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		655A85E62307BEAC00C72B33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				654C72FA2307083200F0F487 /* Conversion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		655A85E72307BEB300C72B33 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				655A85E82307BEF100C72B33 /* CurrencyNetwork */,
+				654C72F623059AB900F0F487 /* BaseRequest.swift */,
+				654C7302230708A600F0F487 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		655A85E82307BEF100C72B33 /* CurrencyNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				654C72FF2307087E00F0F487 /* CurrencyRequest.swift */,
+				654C72FC2307085B00F0F487 /* CurrencyService.swift */,
+				654C7304230708E100F0F487 /* CurrencyResponse.swift */,
+			);
+			path = CurrencyNetwork;
+			sourceTree = "<group>";
+		};
+		BF0E56E1B04D6F2322713603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5617A894FDD83173C1A2B941 /* Pods_rainierrivera.framework */,
+				998546EE8934C3D6926E82AE /* Pods_rainierriveraTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC1D16CDBD1C2EF0B19D89D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AFBB4942682EC5C95BF7779 /* Pods-rainierrivera.debug.xcconfig */,
+				8C1E3DC5CA9359861AB7B4B4 /* Pods-rainierrivera.release.xcconfig */,
+				DE092D5B0F7639402C2C9C6F /* Pods-rainierriveraTests.debug.xcconfig */,
+				9BABF4BD83B4BD9B522EEDB5 /* Pods-rainierriveraTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65318CC82305993200B82740 /* Build configuration list for PBXNativeTarget "rainierrivera" */;
 			buildPhases = (
+				DA2C9D9F094B5F6511DF8390 /* [CP] Check Pods Manifest.lock */,
 				65318CA72305992E00B82740 /* Sources */,
 				65318CA82305992E00B82740 /* Frameworks */,
 				65318CA92305992E00B82740 /* Resources */,
+				E1F9769E0D68AB73239A0D01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65318CCB2305993200B82740 /* Build configuration list for PBXNativeTarget "rainierriveraTests" */;
 			buildPhases = (
+				F4FB2B7B059B118E99E59CC7 /* [CP] Check Pods Manifest.lock */,
 				65318CBB2305993200B82740 /* Sources */,
 				65318CBC2305993200B82740 /* Frameworks */,
 				65318CBD2305993200B82740 /* Resources */,
+				5CCD8A46DBF68EAD47BB08BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +289,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CCD8A46DBF68EAD47BB08BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rainierriveraTests/Pods-rainierriveraTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rainierriveraTests/Pods-rainierriveraTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rainierriveraTests/Pods-rainierriveraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2C9D9F094B5F6511DF8390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rainierrivera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F9769E0D68AB73239A0D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rainierrivera/Pods-rainierrivera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rainierrivera/Pods-rainierrivera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rainierrivera/Pods-rainierrivera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FB2B7B059B118E99E59CC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rainierriveraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65318CA72305992E00B82740 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65318CB12305992E00B82740 /* ViewController.swift in Sources */,
+				654C7305230708E100F0F487 /* CurrencyResponse.swift in Sources */,
+				654C72FB2307083200F0F487 /* Conversion.swift in Sources */,
+				65318CB12305992E00B82740 /* CurrencyViewController.swift in Sources */,
+				654C7303230708A600F0F487 /* NetworkService.swift in Sources */,
+				654C72FD2307085B00F0F487 /* CurrencyService.swift in Sources */,
+				654C72F9230707EB00F0F487 /* CurrencyViewModel.swift in Sources */,
 				65318CAF2305992E00B82740 /* AppDelegate.swift in Sources */,
+				654C73002307087E00F0F487 /* CurrencyRequest.swift in Sources */,
+				654C72F723059AB900F0F487 /* BaseRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +543,7 @@
 		};
 		65318CC92305993200B82740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AFBB4942682EC5C95BF7779 /* Pods-rainierrivera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +561,7 @@
 		};
 		65318CCA2305993200B82740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C1E3DC5CA9359861AB7B4B4 /* Pods-rainierrivera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +579,7 @@
 		};
 		65318CCC2305993200B82740 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE092D5B0F7639402C2C9C6F /* Pods-rainierriveraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +600,7 @@
 		};
 		65318CCD2305993200B82740 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BABF4BD83B4BD9B522EEDB5 /* Pods-rainierriveraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
